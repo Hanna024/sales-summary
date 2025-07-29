@@ -2,21 +2,35 @@
 <html>
 <head>
 <title>Daily Sales Summary</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
 
-<!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-<!-- DataTables JS -->
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<style>
+  body {
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5em 1em;
+  }
+</style>
 
 </head>
 <body>
 
-<h1>Daily Sales Summary</h1>
+<div class="container">
+  <h1 class="text-center">Daily Sales Summary</h1>
 
-<table border="1" class="dataframe display" id="sales-table">
+  <table border="1" class="dataframe table table-striped table-hover" id="sales-table">
   <thead>
     <tr style="text-align: center;">
       <th>Date</th>
@@ -231,6 +245,18 @@
     </tr>
   </tbody>
 </table>
+</div>
+
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- DataTables JS -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
 
 <script>
 $(document).ready( function () {
