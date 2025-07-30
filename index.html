@@ -26,6 +26,12 @@
         h1 {
             text-align: center;
         }
+        td:nth-child(n+5) {
+            text-align: center;
+        }
+        tr:last-child td {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +45,10 @@
       <th>Batching Plant</th>
       <th>Km</th>
       <th>Quantity</th>
+      <th>Brand</th>
+      <th>Purchase Price</th>
       <th>Sale Price</th>
+      <th>Gross Margin</th>
       <th>VCFC</th>
       <th>Net Margin</th>
     </tr>
@@ -50,7 +59,10 @@
       <td>2025-07-29</td>
       <td>22 Prime Construction and Realty Development Inc.</td>
       <td>Omnico - Taguig</td>
-      <td>113.00</td>
+      <td>113</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -61,7 +73,10 @@
       <td>2025-07-29</td>
       <td>BDO Unibank Inc. - (BDO Makati) (BDO Unibank Inc.)</td>
       <td>Deecon - Pasig City</td>
-      <td>105.00</td>
+      <td>105</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -72,7 +87,10 @@
       <td>2025-07-29</td>
       <td>BDO Unibank Inc. - (BDO Makati) (BDO Unibank Inc.)</td>
       <td>Deecon - Pasig City</td>
-      <td>105.00</td>
+      <td>105</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -83,62 +101,80 @@
       <td>2025-07-29</td>
       <td>Eterton Multi-Resources Corporation</td>
       <td>Eternit - Mandaluyong</td>
-      <td>98.00</td>
+      <td>98</td>
       <td>983.00</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>205.00</td>
+      <td>57.00</td>
       <td>25.29</td>
-      <td>179.71</td>
+      <td>31.71</td>
     </tr>
     <tr>
       <th>5</th>
       <td>2025-07-29</td>
       <td>Eterton Multi-Resources Corporation</td>
       <td>Eternit - Mandaluyong</td>
-      <td>98.00</td>
+      <td>98</td>
       <td>988.75</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>205.00</td>
+      <td>57.00</td>
       <td>25.29</td>
-      <td>179.71</td>
+      <td>31.71</td>
     </tr>
     <tr>
       <th>6</th>
       <td>2025-07-29</td>
       <td>Filfirst Concrete Innovations Inc.</td>
       <td>Filfirst Concrete - Baras</td>
-      <td>118.00</td>
+      <td>118</td>
       <td>1,031.25</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>196.00</td>
+      <td>48.00</td>
       <td>27.14</td>
-      <td>168.86</td>
+      <td>20.86</td>
     </tr>
     <tr>
       <th>7</th>
       <td>2025-07-29</td>
       <td>Filfirst Concrete Innovations Inc.</td>
       <td>Filfirst Concrete - Baras</td>
-      <td>118.00</td>
+      <td>118</td>
       <td>891.25</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>196.00</td>
+      <td>48.00</td>
       <td>27.14</td>
-      <td>168.86</td>
+      <td>20.86</td>
     </tr>
     <tr>
       <th>8</th>
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
       <td>1,303.00</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>198.00</td>
+      <td>50.00</td>
       <td>23.33</td>
-      <td>174.67</td>
+      <td>26.67</td>
     </tr>
     <tr>
       <th>9</th>
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -149,18 +185,24 @@
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
       <td>1,288.25</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>198.00</td>
+      <td>50.00</td>
       <td>23.33</td>
-      <td>174.67</td>
+      <td>26.67</td>
     </tr>
     <tr>
       <th>11</th>
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -171,18 +213,24 @@
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
       <td>1,181.00</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>198.00</td>
+      <td>50.00</td>
       <td>23.33</td>
-      <td>174.67</td>
+      <td>26.67</td>
     </tr>
     <tr>
       <th>13</th>
       <td>2025-07-29</td>
       <td>Phiaso Enterprises</td>
       <td>10K North Concrete - Sta. Quiteria Caloocan</td>
-      <td>75.00</td>
+      <td>75</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -193,18 +241,24 @@
       <td>2025-07-29</td>
       <td>Premier Clark Complex Inc.</td>
       <td>Phil. Hattori - Pampanga</td>
-      <td>77.00</td>
+      <td>77</td>
       <td>1,284.50</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>169.00</td>
+      <td>21.00</td>
       <td>23.50</td>
-      <td>145.50</td>
+      <td>-2.50</td>
     </tr>
     <tr>
       <th>15</th>
       <td>2025-07-29</td>
       <td>Premier Clark Complex Inc.</td>
       <td>Phil. Hattori - Pampanga</td>
-      <td>77.00</td>
+      <td>77</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -215,29 +269,38 @@
       <td>2025-07-29</td>
       <td>Premier Clark Complex Inc.</td>
       <td>Phil. Hattori - Pampanga</td>
-      <td>77.00</td>
+      <td>77</td>
       <td>1,342.25</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>169.00</td>
+      <td>21.00</td>
       <td>23.50</td>
-      <td>145.50</td>
+      <td>-2.50</td>
     </tr>
     <tr>
       <th>17</th>
       <td>2025-07-29</td>
       <td>Premier Clark Complex Inc.</td>
       <td>Phil. Hattori - Pampanga</td>
-      <td>77.00</td>
+      <td>77</td>
       <td>1,270.75</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>169.00</td>
+      <td>21.00</td>
       <td>23.50</td>
-      <td>145.50</td>
+      <td>-2.50</td>
     </tr>
     <tr>
       <th>18</th>
       <td>2025-07-29</td>
       <td>Premier Clark Complex Inc.</td>
       <td>Phil. Hattori - Pampanga</td>
-      <td>77.00</td>
+      <td>77</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -248,18 +311,24 @@
       <td>2025-07-29</td>
       <td>Robinsons Land Corporation</td>
       <td>Monocrete - Taguig City</td>
-      <td>111.00</td>
+      <td>111</td>
       <td>1,421.50</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>175.00</td>
+      <td>27.00</td>
       <td>26.54</td>
-      <td>148.46</td>
+      <td>0.46</td>
     </tr>
     <tr>
       <th>20</th>
       <td>2025-07-29</td>
       <td>Robinsons Land Corporation</td>
       <td>Monocrete - Taguig City</td>
-      <td>111.00</td>
+      <td>111</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -270,7 +339,10 @@
       <td>2025-07-29</td>
       <td>Robinsons Land Corporation</td>
       <td>Monocrete - Taguig City</td>
-      <td>111.00</td>
+      <td>111</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -281,7 +353,10 @@
       <td>2025-07-29</td>
       <td>Robinsons Land Corporation</td>
       <td>Monocrete - Taguig City</td>
-      <td>111.00</td>
+      <td>111</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -292,7 +367,10 @@
       <td>2025-07-29</td>
       <td>Robinsons Land Corporation</td>
       <td>Deecon - Pasig City</td>
-      <td>105.00</td>
+      <td>105</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -303,7 +381,10 @@
       <td>2025-07-29</td>
       <td>Titan Concrete Materials Corp.</td>
       <td>Titan Readymix - Balagtas Bulacan</td>
-      <td>40.00</td>
+      <td>40</td>
+      <td></td>
+      <td>Eagle</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -314,33 +395,42 @@
       <td>2025-07-29</td>
       <td>Titan Concrete Materials Corp.</td>
       <td>Titan Readymix - Balagtas Bulacan</td>
-      <td>40.00</td>
+      <td>40</td>
       <td>1,321.25</td>
+      <td>Eagle</td>
+      <td>148.00</td>
       <td>207.00</td>
+      <td>59.00</td>
       <td>20.34</td>
-      <td>186.66</td>
+      <td>38.66</td>
     </tr>
     <tr>
       <th>26</th>
       <td>2025-07-29</td>
       <td>Unicon Readymix Inc.</td>
       <td>Unicon Ready Mix - Tulo Batangas</td>
-      <td>6.00</td>
+      <td>6</td>
       <td>985.75</td>
+      <td>Republic</td>
+      <td>192.00</td>
       <td>214.00</td>
+      <td>22.00</td>
       <td>17.44</td>
-      <td>196.56</td>
+      <td>4.56</td>
     </tr>
     <tr>
       <th>Total</th>
       <td></td>
-      <td>9</td>
-      <td>9</td>
+      <td></td>
+      <td></td>
       <td></td>
       <td>15,292</td>
+      <td>26</td>
+      <td>150.84</td>
       <td>190.93</td>
+      <td>40.09</td>
       <td>23.77</td>
-      <td>167.17</td>
+      <td>16.33</td>
     </tr>
   </tbody>
 </table><h2>Hauling</h2><table border="1" class="dataframe">
@@ -363,7 +453,7 @@
       <td>2025-07-29</td>
       <td>Eagle Cement Corporation</td>
       <td>Quality Precast - Taguig</td>
-      <td>104.00</td>
+      <td>104</td>
       <td></td>
       <td></td>
       <td></td>
@@ -374,7 +464,7 @@
       <td>2025-07-29</td>
       <td>Eagle Cement Corporation</td>
       <td>Quality Precast - Taguig</td>
-      <td>104.00</td>
+      <td>104</td>
       <td></td>
       <td></td>
       <td></td>
@@ -385,7 +475,7 @@
       <td>2025-07-29</td>
       <td>Holcim Philippines Inc.</td>
       <td>Powerchina - Calawis Antipolo</td>
-      <td>64.00</td>
+      <td>64</td>
       <td>689.75</td>
       <td>28.10</td>
       <td>16.52</td>
@@ -396,7 +486,7 @@
       <td>2025-07-29</td>
       <td>Holcim Philippines Inc.</td>
       <td>Teh Hsin - Calumpit</td>
-      <td>50.00</td>
+      <td>50</td>
       <td>1,250.25</td>
       <td>15.60</td>
       <td>15.33</td>
@@ -407,7 +497,7 @@
       <td>2025-07-29</td>
       <td>Holcim Philippines Inc.</td>
       <td>Powerchina - Calawis Antipolo</td>
-      <td>64.00</td>
+      <td>64</td>
       <td>700.25</td>
       <td>28.10</td>
       <td>16.52</td>
@@ -418,7 +508,7 @@
       <td>2025-07-29</td>
       <td>Philcement Corporation</td>
       <td>Phil Cement Bataan Plant</td>
-      <td>8.00</td>
+      <td>8</td>
       <td>50.24</td>
       <td>6.72</td>
       <td>3.91</td>
@@ -429,7 +519,7 @@
       <td>2025-07-29</td>
       <td>Philcement Corporation</td>
       <td>MRL Builders Center - Nueva Vizcaya</td>
-      <td>300.00</td>
+      <td>300</td>
       <td></td>
       <td></td>
       <td></td>
@@ -451,7 +541,7 @@
       <td>2025-07-29</td>
       <td>Philcement Corporation</td>
       <td>MV Richelle V - Mariveles Bataan</td>
-      <td>1.00</td>
+      <td>1</td>
       <td>1,200.00</td>
       <td>2.30</td>
       <td>1.86</td>
@@ -462,7 +552,7 @@
       <td>2025-07-29</td>
       <td>Philstone Industrial &amp; Manufacturing Corp</td>
       <td>Sika Phils. - Taguig</td>
-      <td>35.00</td>
+      <td>35</td>
       <td></td>
       <td></td>
       <td></td>
@@ -473,7 +563,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Vicmar Construction - San Jose Sico Batangas</td>
-      <td>4.00</td>
+      <td>4</td>
       <td>1,192.00</td>
       <td>13.18</td>
       <td>11.40</td>
@@ -484,7 +574,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Sumitomo Mitsui - Quezon City</td>
-      <td>31.00</td>
+      <td>31</td>
       <td></td>
       <td></td>
       <td></td>
@@ -495,7 +585,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Ramcrete - Lipa Batangas</td>
-      <td>53.00</td>
+      <td>53</td>
       <td>948.75</td>
       <td>17.61</td>
       <td>15.58</td>
@@ -506,7 +596,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Conmix - San Jose Batangas</td>
-      <td>33.00</td>
+      <td>33</td>
       <td>933.00</td>
       <td>15.09</td>
       <td>13.88</td>
@@ -517,7 +607,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Conmix - San Jose Batangas</td>
-      <td>33.00</td>
+      <td>33</td>
       <td>1,097.00</td>
       <td>15.09</td>
       <td>13.88</td>
@@ -528,7 +618,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Ramcrete - Lipa Batangas</td>
-      <td>53.00</td>
+      <td>53</td>
       <td>986.00</td>
       <td>17.61</td>
       <td>15.58</td>
@@ -539,7 +629,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Conmix - San Jose Batangas</td>
-      <td>33.00</td>
+      <td>33</td>
       <td>983.75</td>
       <td>15.09</td>
       <td>13.88</td>
@@ -550,7 +640,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Unicon Ready Mix - Tulo Batangas</td>
-      <td>6.00</td>
+      <td>6</td>
       <td>955.50</td>
       <td>13.18</td>
       <td>11.57</td>
@@ -561,7 +651,7 @@
       <td>2025-07-29</td>
       <td>Republic Cement &amp; Building Materials, Inc.</td>
       <td>Vicmar Construction - San Jose Sico Batangas</td>
-      <td>4.00</td>
+      <td>4</td>
       <td></td>
       <td></td>
       <td></td>
@@ -572,7 +662,7 @@
       <td>2025-07-29</td>
       <td>Solid Cement Corporation</td>
       <td>DMCI Acacia - Taguig</td>
-      <td>28.00</td>
+      <td>28</td>
       <td></td>
       <td></td>
       <td></td>
@@ -583,7 +673,7 @@
       <td>2025-07-29</td>
       <td>Solid Cement Corporation</td>
       <td>Delta - Taguig</td>
-      <td>36.00</td>
+      <td>36</td>
       <td>1,026.00</td>
       <td>17.40</td>
       <td>14.13</td>
@@ -592,8 +682,8 @@
     <tr>
       <th>Total</th>
       <td></td>
-      <td>6</td>
-      <td>15</td>
+      <td></td>
+      <td></td>
       <td></td>
       <td>12,012</td>
       <td>15.60</td>
